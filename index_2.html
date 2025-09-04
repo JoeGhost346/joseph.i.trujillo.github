@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas Outfit Drawing</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .outfit-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .hat {
+            width: 200px;
+            height: 80px;
+            background: #000;
+            border-radius: 50px 50px 0 0;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .hat::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 160px;
+            height: 8px;
+            background: #fff;
+            border-radius: 4px;
+        }
+
+        .hat::after {
+            content: '';
+            position: absolute;
+            top: 35px;
+            left: 20px;
+            width: 160px;
+            height: 6px;
+            background: #fff;
+            border-radius: 3px;
+        }
+
+        .shirt {
+            width: 180px;
+            height: 200px;
+            background: #000;
+            position: relative;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .shirt::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            width: 140px;
+            height: 8px;
+            background: #fff;
+            border-radius: 4px;
+        }
+
+        .shirt::after {
+            content: '';
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            width: 140px;
+            height: 6px;
+            background: #fff;
+            border-radius: 3px;
+        }
+
+        .shirt .sleeve {
+            position: absolute;
+            top: 20px;
+            width: 60px;
+            height: 120px;
+            background: #000;
+            border-radius: 30px;
+        }
+
+        .shirt .sleeve.left {
+            left: -30px;
+        }
+
+        .shirt .sleeve.right {
+            right: -30px;
+        }
+
+        .shirt .sleeve::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            width: 40px;
+            height: 6px;
+            background: #fff;
+            border-radius: 3px;
+        }
+
+        .shirt .sleeve::after {
+            content: '';
+            position: absolute;
+            top: 35px;
+            left: 10px;
+            width: 40px;
+            height: 5px;
+            background: #fff;
+            border-radius: 2px;
+        }
+
+        .pants {
+            width: 160px;
+            height: 180px;
+            background: #000;
+            position: relative;
+            border-radius: 0 0 15px 15px;
+        }
+
+        .pants::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 120px;
+            height: 8px;
+            background: #fff;
+            border-radius: 4px;
+        }
+
+        .pants::after {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 20px;
+            width: 120px;
+            height: 6px;
+            background: #fff;
+            border-radius: 3px;
+        }
+
+        .pants .leg {
+            position: absolute;
+            bottom: 0;
+            width: 70px;
+            height: 100px;
+            background: #000;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .pants .leg.left {
+            left: 10px;
+        }
+
+        .pants .leg.right {
+            right: 10px;
+        }
+
+        .pants .leg::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 10px;
+            width: 50px;
+            height: 6px;
+            background: #fff;
+            border-radius: 3px;
+        }
+
+        .pants .leg::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 10px;
+            width: 50px;
+            height: 5px;
+            background: #fff;
+            border-radius: 2px;
+        }
+
+        .shoes {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .shoe {
+            width: 80px;
+            height: 50px;
+            background: #000;
+            border-radius: 20px 20px 10px 10px;
+            position: relative;
+        }
+
+        .shoe::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 10px;
+            width: 60px;
+            height: 6px;
+            background: #fff;
+            border-radius: 3px;
+        }
+
+        .shoe::after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            left: 10px;
+            width: 60px;
+            height: 5px;
+            background: #fff;
+            border-radius: 2px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .adidas-logo {
+            font-size: 18px;
+            color: #000;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="outfit-container">
+        <div class="title">Adidas Outfit</div>
+        
+        <!-- Hat -->
+        <div class="hat"></div>
+        
+        <!-- Long Sleeve Shirt -->
+        <div class="shirt">
+            <div class="sleeve left"></div>
+            <div class="sleeve right"></div>
+        </div>
+        
+        <!-- Pants -->
+        <div class="pants">
+            <div class="leg left"></div>
+            <div class="leg right"></div>
+        </div>
+        
+        <!-- Shoes -->
+        <div class="shoes">
+            <div class="shoe"></div>
+            <div class="shoe"></div>
+        </div>
+        
+        <div class="adidas-logo">ADIDAS</div>
+    </div>
+</body>
+</html>
